@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.weather {
+  padding: 10px 10px 0 10px;
+  display: inline-block;
+  color: #444;
+  font-family: Roboto, Arial;
+  font-size: 12.8px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 60px;
+  height: 60px;
+}
+
+.top {
+  padding-left: 17px;
+}
+
+.nyText h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.temp h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.fixSpace {
+  width: 30%;
+  display: flex;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: 135px;
+  grid-template-rows: repeat(4, 20px);
+  grid-gap: 2px;
+  padding-left: 194px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(7, 80px);
+  grid-gap: 10px;
+  padding-top: 24px;
+}
+
+.container2 .today,
+.day,
+.day,
+.day,
+.day,
+.day,
+.day {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.today img,
+.day img,
+.day img,
+.day img,
+.day img,
+.day img,
+.day img {
+  width: 50px;
+  height: 50px;
+}
+
+.today h1,
+.day h1,
+.day h1,
+.day h1,
+.day h1,
+.day h1,
+.day h1 {
+  font-weight: bold;
+  width: 101px;
+}
+.degree {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 750px) {
+  .weather {
+    width: 99%;
+  }
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(7, 106px);
+    grid-template-rows: 100%;
+  }
+
+  .container2 .today,
+  .day,
+  .day,
+  .day,
+  .day,
+  .day,
+  .day {
+    flex-direction: column;
+    border-top: unset;
+  }
+
+  .today h1,
+  .day h1,
+  .day h1,
+  .day h1,
+  .day h1,
+  .day h1,
+  .day h1 {
+    width: 68px;
+    font-size: 12.7px;
+  }
+
+  .degree {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container1 {
+    padding-left: 165pxpx;
+  }
+
+  .temp {
+    justify-content: unset;
+  }
+}
